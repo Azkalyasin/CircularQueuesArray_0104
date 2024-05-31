@@ -61,13 +61,18 @@ public:
 			else
 				front = front + 1;
 		}
-	
+	}
 
-		void dispay() {
+	void dispay() {
+		int front_position = front;
+		int reare_position = rear;
 
+
+		//cek apakah antrian kosong
+		if (front == -1) {
+			cout << "queue is empty\n";
+			return;
 		}
-
-
 	}
 
 
