@@ -103,5 +103,46 @@ public:
 
 int main()
 {
+	Queues q;
+	char ch;
 
+
+	while (true) {
+		try {
+			cout << "Menu" << endl;
+			cout << "1.implementasi insert operation" << endl;
+			cout << "2.implementasi delate  operation" << endl;
+			cout << "3.display values" << endl;
+			cout << "4.exit" << endl;
+			cout << "enter your chois(1-4): ";
+			cin >> ch;
+			cout << endl;
+
+			switch (ch) {
+			case '1': {
+				q.insert();
+				break;
+			}
+			case '2': {
+				q.remove();
+				break;
+			}
+			case '3': {
+				q.dispay();
+				break;
+			}
+			case '4': {
+				return 0;
+			}
+			default: {
+				cout << "invalid option!!" << endl;
+			}
+			}
+		}
+		catch (exception& e) {
+			cout << "chack for the values entered " << endl;
+		}
+		
+	}
+	return 0;
 }
