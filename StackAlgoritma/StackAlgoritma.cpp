@@ -63,6 +63,10 @@ public:
 		}
 	
 
+		void dispay() {
+
+		}
+
 
 	}
 
